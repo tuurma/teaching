@@ -1,0 +1,807 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Data vs Presenation</title>
+
+    <meta name="description" content="Data vs Presenation" />
+    <meta name="author" content="Magdalena Turska" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+
+    <link rel="stylesheet" href="reveal/css/reveal.css" />
+    <link rel="stylesheet" href="reveal/css/theme/moon.css" id="theme" />
+
+    <link rel="stylesheet"
+      href="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/bootstrap/css/bootstrap.css" />
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css" />
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <!--[if lt IE 9]>
+		<script src="reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <div style="margin-top: 120px">
+            <h2>Introduction to digital scholarly editions</h2>
+            <p>
+              <small>Magdalena Turska | <a href="http://twitter.com/magdaturska"
+                >@magdaturska</a>
+                <br/>
+                University of Oxford | DiXiT ITN
+              </small></p><p style="text-align: center;"><small>and</small></p>
+            <p><small>Katarzyna Jasińska-Zdun | <a href="https://twitter.com/sopranissime"
+                  >@sopranissime</a>
+            <br/>
+            University of Warsaw | Faculty of "Artes Liberales"</small> 
+            </p>
+          </div>
+          <p style="margin-top: 150px;"><small> Press <strong>SPACE</strong> to navigate
+            through slides. </small></p>
+        </section>
+        
+        <section><h2>At the heart of the edition: the text</h2>
+          <blockquote> “What is text? I am not so naïve as to imagine that question could ever be
+            finally settled. Asking such a question is like asking ‘How long is the coast of
+            England?’.”(J. McGann)</blockquote>
+          <blockquote> “Text is what you look at. And how you look at it.” (P. Sahle)</blockquote>
+          <blockquote>A lot of this talk is based on the work of Patrick Sahle, Elena Pierazzo,
+            Georg Vogeler, Franz Fisher, the IDE, DiXiT, and RIDE amongst others.</blockquote>
+        </section>
+        <section><h2>Text is not the only interest in an edition</h2>
+          <ul>
+            <li>‘verbal codes’: text,
+              marginalia, reading notes </li>
+            <li>‘non-verbal codes’: pencil
+              marks, dog ears, changes in medium, writing, etc.</li>
+          </ul>
+        </section>
+        <section>
+          <p>Ioannes Dantiscus Correspondence</p>
+          <img src="img/CEIDTC.IDL116.jpg" />
+        </section>
+        <section><p> Walt Whitman, page
+          of Leaves of Grass, 1855</p>
+          <img src="img/ww0015s.jpg" />
+        </section>
+        <section><p>Honoré de Balzac,
+          Eugénie Grandet, Autograph manuscript and corrected galley proofs signed, 1833</p>
+          <img src="img/balzac.jpg" />
+        </section>
+        <section>
+          <p>Maria Skłodowska-Curie, notebook</p>
+          <img src="img/curie_notebook.png" />
+        </section>
+        <section>
+          <blockquote>“In getting my books,” Edgar Allan Poe wrote in 1844, “I have always been solicitous of
+            an ample margin; this is not so much through any love of the thing in itself, however
+            agreeable, as for the facility it affords me of penciling in suggested thoughts,
+            agreements, and differences of opinion, or brief critical comments in general.” </blockquote>
+          <img
+            src="img/marginalia-wallace.jpg" /> 
+          <p>The inside
+          cover from David Foster Wallace’s teaching copy of Thomas Harris’s The Silence of the
+          Lambs.</p> 
+        </section>
+        <section>
+          <img src="img/dogear.png" width="80%" />
+        </section>
+        <section><h2>Different types of editions</h2>
+          <p>Type facsimile edition</p>
+          <p>Genetic edition</p>
+          <p>Diplomatic edition</p>
+          <p>Semi-diplomatic edition</p>
+          <p>Critical edition</p>
+        </section>
+        <section><h2>Scholarly Editions</h2>
+          <blockquote>Edition ist die erschließende Wiedergabe historischer Dokumente</blockquote>
+          <blockquote>A scholarly edition is the critical representation of historical
+            documents</blockquote>
+          <small>P. Sahle</small>
+        </section>
+        <section>
+          <h2>critical representation of historical documents</h2>
+          <p>"historical documents": editing is concerned with documents that already exist. To
+            publish a new document (which doesn't refer to something preexisting) is not scholarly
+            editing. </p>
+          <p>"representation": covers (abstract) representation as well as presentation
+            (reproduction). Publishing descriptive data (e.g. metadata) without reproduction is not
+            critical editing. A catalogue, a database, a calendar is not an edition.</p>
+          <p>"critical / scholarly": reproduction of documents without critical examination is not
+            scholarly editing. A facsimile is not a scholarly edition. </p>
+        </section>
+        <section><h2>SE is about a research question</h2>
+          <blockquote>Research objective determines what is deemed necessary to
+            annotate</blockquote>
+          <ul>
+            <li>apparatus criticus </li>
+            <li>commentary </li>
+            <li>genetic editing </li>
+            <li>transcription </li>
+            <li>normalisation </li>
+            <li>metadata (always there, but not always the same)</li>
+            <li>linguistic features</li>
+            <li>list goes on forever...</li>
+          </ul>
+        </section>
+        <section><h2>Editorial operations and decisions</h2>
+          <p>Scope: the text or the document? </p>
+          <p>Reading the text: how to handle holes, gaps, damages, unreadable passages, word
+            spacing, and abbreviations?</p>
+          <p>History of the manuscript/layer and stratification: are there annotations from
+            different hands? What to do with them?</p>
+          <p>Codicological issues: how was the original manuscript assembled? Is it still assembled
+            in that way? Is it complete? Has it been bound with other material?</p>
+        </section>
+        <section><h2>Spectrum of editorial intervention</h2>
+          <ul>
+            <li> Abbreviations </li>
+            <li>Word spacing </li>
+            <li>Line breaks </li>
+            <li>Additions/deletions </li>
+            <li>Spellings </li>
+            <li>Errors </li>
+            <li>Etc.</li>
+          </ul>
+        </section>
+        <section><h2>But what is a <em>Digital Scholarly Edition</em></h2>
+          <p>digital != digitized</p>
+          <p>A digital edition can not be printed without a loss of information and/or
+            functionality. The digital edition is guided by a different paradigm. If the paradigm of
+            an edition is limited to the two-dimensional space of the "page" and to typographic
+            means of information representation, then it's not a digital edition.</p>
+          <blockquote>Digital scholarly editions are not just scholarly editions in digital
+            media.</blockquote>
+        </section>
+        <section><h2>The 'digital' enhancements</h2>
+          <ul>
+            <li>scope: volume makes the print version impractical or impossible</li>
+            <li>linked data: extensive use of
+              pointers to linked material on-site or elsewhere</li>
+            <li>searches: full-text search
+              with pattern matching, context aware search</li>
+            <li>visualisations: timelines,
+              maps, graphs, word-clouds, topic-extraction...</li>
+            <li>linguistic analysis</li>
+            <li>facsimiles: hi-quality
+              images, zooming, zone-level annotation</li>
+            <li>social aspects: comments
+              allowing for scholarly discussion in context of published material</li>
+          </ul>
+        </section>
+        <section><h2>open methodological questions</h2>
+          <ul>
+            <li>Guidelines for reviewing
+              SDE's are based on our traditions of print editions and the 'digital incunabula' we've
+              seen so far. As such, any guidelines are a moving and developing
+              target. Many questions are still
+              under discussion.</li>
+            <li>Best practices in digital
+              editing have been established for many editorial tasks. </li>
+            <li>Reviewing SDEs will help to
+              disseminate and canonize approved methods and approaches. </li>
+            <li>Evaluation of SDEs should be seen as yet another contribution to
+              ongoing methodological discussions </li>
+          </ul>
+</section>
+        <section><h2>SDE best practice</h2>
+          <blockquote>But, that said, there are certainly general principles that have been
+            around for some time.</blockquote>
+        </section>
+        <section><h2>8 Principles by Michael Sperberg-McQueen (1994) [1-2]</h2>
+            <blockquote>Electronic
+              scholarly editions are worth having. And therefore it is worth thinking about the form
+              they should take.</blockquote>
+            <blockquote>Electronic
+              scholarly editions should be accessible to the broadest audience possible. They should
+              not require a particular type of computer, or a particular piece of software:
+              unnecessary technical barriers to their use should be avoided.</blockquote>
+            </section>
+        <section>
+          <h2>8 Principles by Michael Sperberg-McQueen (1994) [3-4]</h2><ul class="ordered">
+            <blockquote>Electronic
+              scholarly editions should have relatively long lives: at least as long as printed
+              editions. They should not become technically obsolete before they are intellectually
+              obsolete.</blockquote>
+            <blockquote>Printed scholarly
+              editions have developed their current forms in order to meet both intellectual
+              requirements and to adapt to the characteristics of print publication. Electronic
+              editions must meet the same intellectual needs. There is no reason to abandon
+              traditional intellectual requirements merely because we are using a different medium
+              to publish them.</blockquote>
+          </ul>
+        </section>
+        <section>
+          <h2>8 Principles by Michael Sperberg-McQueen (1994) [5]</h2>
+            <blockquote>On the other hand,
+              many conventions or requirements of traditional print editions reflect not the demands
+              of readers or scholarship, but the difficulties of conveying complex information on
+              printed pages without confusing or fatiguing the reader, or the financial exigencies
+              of modern scholarly publishing. Such requirements need not be taken over at all, and
+              must not be taken over thoughtlessly, into electronic editions.</blockquote></section>
+        <section>
+          <h2>8 Principles by Michael Sperberg-McQueen (1994) [6]</h2>
+          <blockquote>Electronic
+              publications can, if suitably encoded and suitably supported by software, present the
+              same text in many forms [and type of reader][...]In this respect, they may face even
+              higher intellectual requirements than print editions, which typically need not attempt
+              to provide annotations for such diverse readers.</blockquote>
+          
+        </section>
+        <section><h2>8 Principles by Michael Sperberg-McQueen (1994) [7-8]</h2>
+            <blockquote>Print editions
+              without apparatus, without documentation of editorial principles, and without decent
+              typesetting are not acceptable substitutes for scholarly editions. Electronic editions
+              without apparatus, without documentation of editorial principles, and without decent
+              provision for suitable display are equally unacceptable for serious scholarly
+              work.</blockquote>
+            <blockquote>As a consequence,
+              we must reject out of hand proposals to create electronic scholarly editions [merely
+              as plain text or word processing files]. </blockquote>
+          </section><section>
+            <h2>Sperberg-McQueen 1994</h2>
+          <blockquote> In sum: I believe electronic scholarly editions must meet three
+            fundamental requirements: accessibility without needless technical barriers to use;
+            longevity; and intellectual integrity.</blockquote>
+        </section>
+        <section><h2>RIDE</h2>
+          <ul>
+            <li>RIDE: A review journal for
+              digital editions and resources </li>
+            <li><a href="http://ride.i-d-e.de/" title="">http://ride.i-d-e.de/</a></li>
+            <li>Published by: Institut für
+              Dokumentologie und Editorik <a href="http://www.i-d-e.de/" title=""
+                  >http://www.i-d-e.de/</a></li>
+            <li>Guidelines: <a
+                
+                href="http://www.i-d-e.de/aktivitaeten/reviews/criteria-for-reviewing-scholarly-digital-editions-version-1-1"
+                
+                  >http://www.i-d-e.de/aktivitaeten/reviews/criteria-for-reviewing-scholarly-digital-editions-version-1-1</a></li>
+            <li><a href="http://www.i-d-e.de/aktivitaeten/reviews/kriterien-fur-die-besprechung-digitaler-editionen-version-1-1"
+                >http://www.i-d-e.de/aktivitaeten/reviews/kriterien-fur-die-besprechung-digitaler-editionen-version-1-1</a></li>
+          </ul>
+        </section>
+        <section><h2>RIDE: Scope of Scholarly Digital Editions</h2>
+          <ul>
+            <li> Criteria for evaluating:<ul>
+                <li>scholarly editions
+                  following a methodology determined by a digital paradigm</li>
+                <li>a variety of documents
+                  and the variety of academic schools in scholarly editing</li>
+              </ul>
+            </li>
+            <li>based on: <ul>
+                <li>established methods of
+                  the print-era</li>
+                <li>new digital
+                  methodologies</li>
+              </ul>
+            </li>
+            <li>contributing to ongoing
+              methodological discussions: <ul>
+                <li>requirements</li>
+                <li>best practices</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Schools of editing, limitations, basic criteria</h2>
+          <div class="p"> There may be sound
+            methodological reasons to refrain from textual reconstruction or emendation, to use no
+            critical apparatus for the documentation of textual variance, or to select a particular
+            perspective during the transcription. Hence, there are only three necessary conditions
+            for an SDE: <ul>
+              <li>Be scholarly: a
+                justification of the editorial method; clear description of the principles of the
+                edition,</li>
+              <li>Compliance with scholarly
+                requirements towards content and quality, which includes that the self-stated rules
+                are followed, and editions acts as a surrogate for the original as much as
+                possible</li>
+              <li>Follow a 'digital
+                paradigm': i.e. editorial concept that is not restricted to the technological
+                limitations of print technology</li>
+            </ul>
+          </div>
+        </section>
+        <section><h2>Your own SDEs?</h2>
+          <ul>
+            <li>How should the RIDE
+              Evaluation Guidelines affect your own creation of SDE? </li>
+            <li>When there is failure to meet
+              these criteria -- most existing SDEs don't meet all of them -- at what point does it
+              stop being a SDE (or stop being scholarly, or digital, or an edition?)</li>
+            <li>What limitations might apply
+              to the SDEs you will create?</li>
+          </ul>
+          <blockquote>Imagine you have full and complete funding to do the project you desire?
+            What will you mark up? What features are important? How reliably and consistently can
+            you encode these?</blockquote>
+          <blockquote>
+            <strong>Now, imagine the funders cut your funding in half! How does this affect what you
+              do? How does this affect how you'd meet these criteria for SDE?</strong></blockquote>
+        </section>
+        <section><h2>RIDE Evaluations: Details of the resource</h2>
+          <div class="p">In any evaluation of a DSE, the
+            details of the resource should be available and recorded: <ul>
+              <li>Title</li>
+              <li>Editors; Principal
+                investigators; Institutions; Project roles; </li>
+              <li>Related projects; earlier
+                developments; standing on the shoulders of what giants?</li>
+              <li>Responsibilities of those
+                involved; Workflows and project processes</li>
+              <li>Resources; Funding sources;
+                Personnel; time resources </li>
+              <li>Any project-wide
+                limitations</li>
+            </ul>
+          </div>
+        </section>
+        <section><h2>25. RIDE Evaluations: Transparency </h2>
+          <ul>
+            <li>Are the general parameters
+              easily accessible? </li>
+            <li>Does the SDE provide an
+              imprint? Is it detailed? </li>
+            <li>Is there a colophon with
+              addition details? </li>
+            <li>Institutional and/or personal
+              contact information?</li>
+          </ul>
+        </section>
+        <section><h2>26. RIDE Evaluations: Selection</h2>
+          <ul>
+            <li> How relevant is the SDE to
+              current and future research? </li>
+            <li>What sources and documents
+              have been selected and why? </li>
+            <li>Are there principles of
+              selection (or sampling)? </li>
+            <li>Is the selection or sample
+              complete within the context of the corpus? </li>
+            <li>What is the broader topical
+              context of the sources? </li>
+            <li>Is the selection
+              understandable? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Project's Achievements</h2>
+          <ul>
+            <li>What does the SDE contribute
+              to the current state of knowledge of the topic? </li>
+            <li>What has been taken from
+              earlier works (e.g. printed editions)? What has it added that is new? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Content</h2>
+          <ul>
+            <li>What does the SDE publish?
+              Quantify and characterise the information presented (e.g. images, transcriptions, full
+              texts, comments, context material, bibliography etc.). Is relevant content missing? Is
+              any omission explained and/or justified? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Documentation</h2>
+          <ul>
+            <li>Is there a description of the
+              aims and methods of the SDE? </li>
+            <li>If not, is this self-evident
+              from the content and its presentation? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Scholarly objectives</h2>
+          <ul>
+            <li>What academic questions does
+              the SDE address? </li>
+            <li>To which fields of research
+              does it contribute? </li>
+            <li>To what extent does it
+              support specific research interests? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Mission</h2>
+          <ul>
+            <li>What does the SDE want to
+              accomplish? </li>
+            <li>Does it achieve its
+              objectives? What does the SDE promise explicitly? </li>
+            <li>What does it merely suggest
+              by self-classification (e.g. ‘edition’, ‘critical edition’, ‘portal’, ‘collected
+              works’, ‘digital archive’, ‘virtual archive’ etc.)? </li>
+            <li>What is the SDE’s target
+              audience?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Method</h2>
+          <ul>
+            <li>Which editorial school does
+              the SDE follow? </li>
+            <li>Which methodological approach
+              does it take? </li>
+            <li>Does it apply e.g. a
+              materialistic or an idealistic / platonic understanding of text? </li>
+            <li>Is it focussing on “works” or
+              on “documents”? </li>
+            <li>How does it assess the
+              textual tradition: Are there preferred manuscripts or are all documents considered to
+              be of equal value? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Representation of documents and texts</h2>
+          <ul>
+            <li>How does the SDE deal with
+              the documents and the texts they bear? </li>
+            <li>What is the role and quality
+              of digital images? </li>
+            <li>What perspective on the text
+              informs the transcription rules applied? </li>
+            <li>How detailed is the
+              transcription? </li>
+            <li>Where would you locate the
+              transcribed texts on a spectrum from document-centric to interpretative
+              representation? </li>
+            <li>Does the SDE provide
+              amendments and a reconstruction of ideal text versions? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Text criticism, indexing and commentary</h2>
+          <ul>
+            <li>What kind of textual
+              criticism is documented in the SDE (e.g. a stemma, detailed description of the
+              manuscripts)? </li>
+            <li>What kinds of indexing,
+              commentary and description of the documents and texts are applied? </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Data modelling</h2>
+          <ul>
+            <li>How is the editorial method
+              technically implemented? </li>
+            <li>What data model is applied? </li>
+            <li>Is the documentation of the
+              data model sufficient? </li>
+            <li>Which data formats are used? </li>
+            <li>Does the SDE follow common
+              standards (e.g. TEI guidelines)? </li>
+            <li>If not, is the deviation from
+              existing standards sufficiently justified? </li>
+            <li>If yes, is the data modelling
+              documented through a formal schema (like an TEI ODD Customisation file) available on
+              the SDE’s site?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Technical infrastructure</h2>
+          <ul>
+            <li>Which technologies are used
+              for the publication of the SDE?</li>
+            <li>Why are these technologies
+              used (e.g. as decision between local conditions and best practices)? </li>
+            <li>Is any non-standard aspect of
+              their use explained in detail?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Interface and Usability</h2>
+          <ul>
+            <li>Is the interface of the SDE
+              clearly arranged and usable without much preliminary reading? </li>
+            <li>Is the content effectively
+              provided through the interface? </li>
+            <li>Can the user quickly identify
+              the purpose, the content and the main access methods of the SDE? </li>
+            <li>Is the interface in line with
+              common visual patterns? </li>
+            <li>Is the user at any time made
+              aware of what content is currently displayed, of their position in the in the overall
+              architecture of the SDE, and how other content can be accessed?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Browsing the site?</h2>
+          <ul>
+            <li>Is it possible to browse
+              through the entirety of the content? </li>
+            <li>Is browsing access easy to
+              understand and allow for fast access to any part of the content?</li>
+            <li>What is the nature of the
+              browsing (page-by-page, date, thematic facets, etc.) </li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Search</h2>
+          <ul>
+            <li>Is there a simple and/or a
+              complex search interface? </li>
+            <li>How can you constrain your
+              search? </li>
+            <li>How does the user find
+              information on search options and possibilities? </li>
+            <li>Does the search provide
+              feasible results when searching without specific knowledge of the content? </li>
+            <li>Are there support functions,
+              like informative help texts, indexes or auto-suggestion?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Indices</h2>
+          <ul>
+            <li>Is the content represented in
+              any other formats which provide an overview of the edition and support access to the
+              material, such as compilations, indices or registers? </li>
+            <li>Are the indexes, commentary
+              or description used in the presentation of the content?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Quality of the presentation</h2>
+          <ul>
+            <li>If there are images, are they
+              of sufficient quality for the main research interests in the material? </li>
+            <li>Can you find significant
+              errors in the transcriptions? </li>
+            <li>Does the SDE contain critical
+              commentary on the textual tradition or the interpretation of the texts? </li>
+            <li>Can the user change the
+              presentation of the material, e.g. from a diplomatic transcription to a normalized
+              version?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Metadata</h2>
+          <ul>
+            <li>Is there metadata for
+              description of and interlinkage between objects in the edition? </li>
+            <li>How are the various
+              constituent parts and objects of the edition described? </li>
+            <li>Are they described clearly
+              and comprehensively? </li>
+            <li>Are the single parts
+              interlinked? </li>
+            <li>Are different text surrogates
+              linked (e.g. text and image)? </li>
+            <li>Are there internal links to
+              further contextual information? </li>
+            <li>Are the single parts linked
+              to external resources?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Identification and citation</h2>
+          <ul>
+            <li>Are there persistent
+              identifiers for the objects of the SDE? </li>
+            <li>Which level of the content
+              structure do they address? </li>
+            <li>Which resolving mechanisms
+              and naming systems are used? </li>
+            <li>Does the SDE supply citation
+              guidelines?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Technical interfaces</h2>
+          <ul>
+            <li>Are there back-end technical
+              interfaces like OAI-PMH, REST, APIs etc., which allow the reuse of the data of the SDE
+              in other contexts? </li>
+            <li>Can you harvest or download
+              the data easily? </li>
+            <li>Can you use the data with
+              other tools useful for this kind of content? </li>
+            <li>Can you integrate the content
+              in other systems, e.g. aggregating content from several sources?</li>
+          </ul>
+          <blockquote>One type of SDE is a well-documented API on top of the academic data --
+            with different views and presentations of that data</blockquote>
+        </section>
+        <section><h2>RIDE Evaluations: Social integration</h2>
+          <ul>
+            <li>Does the SDE integrate with
+              social media and / or virtual research platforms</li>
+            <li>Does the SDE easily allowing
+              sharing/discussion of particular parts? (Citable, hackable, URLs) </li>
+            <li>Does the project have a
+              social media presence in their community?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Export formats</h2>
+          <ul>
+            <li>Are there alternative display
+              or presentation formats available? </li>
+            <li>Can the SDE materials be
+              exported to other formats?</li>
+            <li>Are there versions optimized
+              for print?</li>
+            <li>Are there versions suitable
+              for other devices?</li>
+            <li>Is the SDE designed to be
+              responsive to different screen layouts?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Access to basic data</h2>
+          <ul>
+            <li>Is the basic or underlying
+              data of the edition accessible (e.g. in XML) and if so, how?</li>
+            <li>Is it provided for each
+              single object and/or for the whole SDE?</li>
+            <li>At what granularity is markup
+              provided?</li>
+            <li>Is the access part of the
+              SDE’s user interface or part of an external repository? </li>
+            <li>If you cannot access the
+              basic data, is a justification provided? </li>
+          </ul>
+          <blockquote>If someone else can not take your data and run the same analysis on it,
+            then they are unable to reproduce or test your results. If this is the case, your
+            results are questionable.</blockquote>
+        </section>
+        <section><h2>RIDE Evaluations: Rights and licences</h2>
+          <ul>
+            <li>Does the SDE provide
+              sufficient information on rights and restrictions for the reuse of different parts of
+              the SDE (e.g. images, transcriptions, editorial comments)? </li>
+            <li>Does the SDE utilize a rights
+              model feasible for scholarly reuse of the data? </li>
+            <li>Is a specific
+              internationally-recognised licence model (e.g. Creative Commons) in use?</li>
+          </ul>
+          <blockquote>Wherever possible work funded by public money should be made fully and
+            completely publicly available. Open data is an academic moral imperative.</blockquote>
+        </section>
+        <section><h2>RIDE Evaluations: Additional features</h2>
+          <ul>
+            <li>Does the SDE provide features
+              that merit special attention because they are particularly useful and/or unusual? </li>
+            <li>Are there visualisations,
+              interactivity, image manipulation, options for annotations, commentary notes and
+              personalisation etc.?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Documentation</h2>
+          <ul>
+            <li>Does the SDE provide an
+              introduction or explanatory texts? </li>
+            <li>Is there a help system? </li>
+            <li>Is there sufficient
+              documentation of the project, the edition, and the technical implementation of the
+              SDE? </li>
+            <li>Are the source and the
+              selection of the material described? </li>
+            <li>Are the editorial principles
+              extensively and clearly explained?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Long term use</h2>
+          <ul>
+            <li>What are the SDE’s prospects
+              for long term use? </li>
+            <li>Is the edition complete or
+              does it promise further modifications and additions? </li>
+            <li>Is there institutional
+              support for the curation and sustainment of the SDE? </li>
+            <li>Is the basic data archived? </li>
+            <li>Is there a plan to provide
+              continuous access to the presentation?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Terminology</h2>
+          <ul>
+            <li>Can you classify the project
+              as an “SDE”, and if so, by what definition of an SDE?</li>
+            <li>How would you describe the
+              digital resource as the outcome of an editorial project briefly? </li>
+            <li>If the published results do
+              not fulfill some of the minimal requirements (such as the documentation of the textual
+              tradition, rule based representation, transparency of the editorial decisions,
+              scholarly quality), should it be considered an SDE?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Realisation of aims</h2>
+          <ul>
+            <li>To what extent has the SDE
+              successfully accomplished its original stated aims? </li>
+            <li>What obstacles has it had to
+              overcome to do so?</li>
+            <li>Or why did it not reach these
+              aims?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Fulfillment of general requirements</h2>
+          <ul>
+            <li>Does the project fulfill the
+              requirements of a state of the art SDE? </li>
+            <li>Does it fulfill the two basic
+              requests for creators of a SDE: <ol>
+                <li>State what you do and act
+                  accordingly</li>
+                <li>Keep to the common
+                  scholarly standards</li>
+              </ol></li>
+            <li>Is the edition sufficiently
+              documented? </li>
+            <li>Is it citable and
+              transparent? </li>
+            <li>How is the quality of the
+              content (images, texts, indexing, commentary, context information)?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Contribution of the SDE to scholarship</h2>
+          <h3>What does the SDE</h3>
+          <ul>
+            <li>contribute
+              to current scholarship in its target field? </li>
+            <li>contribute
+              to best practices in digital scholarly editing in general? </li>
+            <li>accomplish
+              which surpasses the possibilities of a printed edition? </li>
+          </ul>
+            <blockquote>Which features merit special
+              attention for noteworthiness and/or innovation, even if they are beyond the scope of
+              these general criteria? </blockquote>
+          
+        </section>
+        <section><h2>RIDE Evaluations: Usability, usefulness, quality</h2>
+          <ul>
+            <li>Is the SDE easy to use? </li>
+            <li>Is it a useful contribution
+              to a specific field of research? </li>
+            <li>How would you describe its
+              academic quality?</li>
+          </ul>
+        </section>
+        <section><h2>RIDE Evaluations: Suggestions for improvement</h2>
+          <ul>
+            <li>If the project is not
+              complete and finished, what should be considered for further improvement? </li>
+            <li>What would be nice and useful
+              additions? </li>
+            <li>Does the project solicit
+              feedback?</li>
+            <li>What would be the most
+              desirable steps for an already terminated project?</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.js"></script>
+    <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+  </body>
+</html>
